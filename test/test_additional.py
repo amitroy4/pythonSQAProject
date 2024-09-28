@@ -25,6 +25,7 @@ def driver():
     driver.quit() # Ensures that the browser is closed after the test
 
 def test_alert(driver):
+    print("Print test case 1")
     # Open page
     driver.get("https://the-internet.herokuapp.com/javascript_alerts")
     print("Page Loaded, the title is:", driver.title)
@@ -52,6 +53,7 @@ def test_alert(driver):
         assert False
 
 def test_windows(driver):
+    print("Print test case 2")
     # Open page
     driver.get("https://the-internet.herokuapp.com/windows")
     print("Windows Page Loaded, the title is:", driver.title)
@@ -82,6 +84,7 @@ def test_windows(driver):
         assert False
 
 def test_frame(driver):
+    print("Print test case 3")
     # Open page
     driver.get("https://demoqa.com/frames")
     print("Frame Page Loaded, the title is:", driver.title)
